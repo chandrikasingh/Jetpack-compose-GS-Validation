@@ -1,7 +1,7 @@
 # JetpackCompose App 
 This application demonstrates the Global Setting write-value procedure through the user application.
 
-1) Write-Settings permission request if fails due custom settings then perform below command:
+1) If the Write Settings permission request fails due to custom settings, execute the following command:
    
     adb shell pm grant com.jsrvc.test android.permission.WRITE_SECURE_SETTINGS
 
