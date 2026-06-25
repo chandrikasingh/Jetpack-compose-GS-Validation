@@ -94,7 +94,7 @@ class TestActivity : ComponentActivity() {
 					modifier = Modifier.fillMaxSize(),
 					color = Color.Transparent
 				){
-					OBMenuButton{ index ->
+					MenuButtons{ index ->
 						Log.d(TAG, "TestValidator: index = $index")
 						coroutineScope.launch {
 							writeEventProgress(index)
@@ -109,7 +109,7 @@ class TestActivity : ComponentActivity() {
 }
 
 @Composable
-fun OBMenuButton(
+fun MenuButtons(
 	topPadding: Dp = 0.dp,
 	onBrowseClick: (id: Int) -> Unit
 ) {
