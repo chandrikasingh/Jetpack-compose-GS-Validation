@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestValidator</string>
+
+    <string name="ble_remote">BLE Remote</string>
+    <string name="txt_press_voice">Press Voice Button</string>
+    <string name="title_search_voice">Search with your voice</string>
+    <string name="desc_search_voice">Search for movies,TV shows,games and actor</string>
+    <string name="text_search_voice">Try saying \"show me action movies\"</string>
+    <string name="desc_search_voice_txt">Press the Voice button on your remote and \njust say what you are looking for</string>
+    <string name="txt_rc_press_ok">Press OK to Dismiss</string>
+
+    <string name="str_start_home">"Home and more."</string>
+
+</resources>
