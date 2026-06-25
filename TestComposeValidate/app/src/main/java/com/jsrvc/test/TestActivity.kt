@@ -115,33 +115,13 @@ fun OBMenuButton(
 ) {
 	val nextPadding = topPadding + 10.dp
 	val commands = listOf(
-		/**** Execution EventID  -1  ****/
-		"Home(1)-[Cmd1]",
-		/**** Execution EventID -2  ****/
-		"Home(2)-[Cmd2]",
-		/**** Execution EventID -3  ****/
-		"LiveTV(1)-[Cmd3]",
-		/**** Execution EventID -4  ****/
-		"LiveTV(2)-[Cmd4]",
-		/**** Execution EventID -5  ****/
-		"LiveTV(3)-[Cmd5]",
-		/**** Execution EventID -6  ****/
-		"LiveTV(4)-[Cmd6]",
-		/**** Execution EventID -7  ****/
-		"YouTube(1)-[Cmd7]",
-		/**** Execution EventID -8  ****/
-		"YouTube(2)-[Cmd8]",
-		/**** Execution EventID -9  ****/
-		"YouTube(3)-[Cmd9]",
-		/**** Execution EventID -10  ****/
-		"OTTApps(1)-[Cmd10]",
-		/**** Execution EventID -11  ****/
-		"OTTApps(2)-[Cmd11]",
-		/**** Execution EventID -12  ****/
-		"OTTApps(3)-[Cmd12]",
-		/**** Execution EventID -13  ****/
-		"Scan (1) -[Cmd13]"
+		/**** Execution Commands ****/
+		"HomeCommand-1",
+		"HomeCommand-2",
+		"HomeCommand-3",
+		"CompleteCommand-4",
 	)
+	
 	
 	LazyColumn(
 		modifier = Modifier.fillMaxSize(),
@@ -187,62 +167,3 @@ fun OBMenuButton(
 
 
 
-
-
-
-//	@SuppressLint("QueryPermissionsNeeded")
-//	fun requestSettingsWritePermission(
-//		context: Context,
-//		packageName: String,
-//		resultLauncherCallback: ActivityResultLauncher<Intent>?
-//	) {
-//		val localIntent = Intent(
-//			Settings.ACTION_MANAGE_WRITE_SETTINGS,
-//			"package:$packageName".toUri()
-//		)
-//
-//		if (localIntent.resolveActivity(context.packageManager) != null) {
-//			context.startActivity(localIntent)
-//		} else {
-//			Log.e(TAG, "Cannot request WRITE_SETTINGS on this device")
-//		}
-//
-//	}
-
-
-//				val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS).apply {
-//					data = Uri.parse("package:${context.packageName}")
-//				}
-//				if (intent.resolveActivity(context.packageManager) != null) {
-//					activityLauncher.launch(intent)
-//				} else {
-//					Log.e(TAG, "TestValidator: WRITE_SETTINGS screen not available on this device")
-//				}
-
-
-/*val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS).apply {
-	data = Uri.parse("package:${context.packageName}")
-	addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-}
-context.startActivity(intent)
-
-	
-	fun getLocPermissionList(): Array<String> {
-		return arrayOf(
-			Manifest.permission.ACCESS_FINE_LOCATION,
-			Manifest.permission.ACCESS_COARSE_LOCATION
-		)
-	}
-	
-	private val writeSettings = arrayOf(
-		Manifest.permission.WRITE_SETTINGS
-	)
-	permissionRequest.launch(writeSettings)
-	
-		private val permissionRequest = registerForActivityResult(
-		ActivityResultContracts.RequestMultiplePermissions()
-	) { permissions ->
-			Log.e(TAG, "TestValidator: Callback WRITE_SETTINGS permission....")
-		}
-	
-*/
