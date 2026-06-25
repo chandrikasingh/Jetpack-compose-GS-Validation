@@ -31,7 +31,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.net.toUri
 
 
-class OBTestActivity : ComponentActivity() {
+class TestActivity : ComponentActivity() {
 	val TAG: String = "TestValidator"
 	
 	private val EP_GLOBAL_KEY = "EVENT_LOAD_INFO"
