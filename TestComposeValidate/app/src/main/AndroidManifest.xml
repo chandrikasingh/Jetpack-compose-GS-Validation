@@ -22,7 +22,7 @@
         android:theme="@style/Theme.JServiceBinding">
 
         <activity
-            android:name=".OBTestActivity"
+            android:name=".TestActivity"
             android:theme="@style/Theme.Translucent"
             android:exported="true">
             <intent-filter>
